@@ -27,7 +27,7 @@ setup(
     author="Vayel",
     description="",
     long_description="",
-    license="MIT",
+    license="GPL",
     classifiers=classifiers,
     install_requires=install_requires,
     include_package_data=True
