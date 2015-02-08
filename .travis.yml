@@ -22,4 +22,4 @@ install:
   - pip install -r numpy-scipy-matplotlib_conda/requirements.txt
     
 script: 
-  - python numpy-scipy-matplotlib_conda/test
+  - python numpy-scipy-matplotlib_conda/test.py
