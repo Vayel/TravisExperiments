@@ -1,18 +1,7 @@
-import os
-import sys
-
 from setuptools import setup
 
 import package
 
-# Requirements
-def strip_comments(l):
-    return l.split("#", 1)[0].strip()
-
-def reqs(*f):
-    return list(filter(None, [strip_comments(l) for l in open(os.path.join(os.getcwd(), *f)).readlines()]))
-    
-requirements = reqs("requirements.txt")
 
 
 setup(
@@ -26,6 +15,5 @@ setup(
     packages=["package"],
     package_dir={"package": "package"},
     include_package_data=True,
-    install_requires=requirements,
     license="MIT"
 )
