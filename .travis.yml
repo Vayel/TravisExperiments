@@ -24,4 +24,4 @@ install:
   - python setup.py install
     
 script: 
-  - python numpy-scipy-matplotlib_conda/test.py
+  - python test.py
