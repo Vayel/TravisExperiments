@@ -1,8 +1,11 @@
+import os
 from setuptools import setup
 
 import package
 
 
+
+here = os.path.dirname(os.path.realpath(__file__))
 
 setup(
     name="package",
@@ -13,7 +16,7 @@ setup(
     author_email="vincent.lefoulon@free.fr",
     url="https://github.com/Vayel/TravisExperiments",
     packages=["package"],
-    package_dir={"package": "package"},
+    package_dir={"package": os.path.join(here, "package")},
     include_package_data=True,
     license="MIT"
 )
