@@ -16,7 +16,6 @@ setup(
     author_email="vincent.lefoulon@free.fr",
     url="https://github.com/Vayel/TravisExperiments",
     packages=["package"],
-    package_dir={"package": os.path.join(here, "package")},
     include_package_data=True,
     license="MIT"
 )
