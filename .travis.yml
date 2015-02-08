@@ -20,6 +20,7 @@ install:
   - conda install --yes numpy=$NUMPY scipy=$SCIPY matplotlib pip
   - pip install setuptools
   - pip install -r numpy-scipy-matplotlib_conda/requirements.txt
+  - python numpy-scipy-matplotlib_conda/setup.py install
     
 script: 
   - python numpy-scipy-matplotlib_conda/test.py
